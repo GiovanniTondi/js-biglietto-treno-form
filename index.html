@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>js-biglietto-treno-form</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbo">
+            <h1>Calcolo prezzo biglietto</h1>
+            <div id="form">
+                <div>
+                    <label for="name">Nome: </label>
+                    <input id="name" type="text" name="name" value="">
+                </div>
+                <div>
+                    <label for="km">Chilometri: </label>
+                    <input id="km" type="number" name="km" value="">
+                </div>
+                <div>
+                    <label for="categoria">Fascia di età:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="Over65">Over 65</option>
+                        <option selected value="Standard">Maggiorenne</option>
+                        <option value="Minorenne">Minorenne</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="biglietto" class="hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Numero Treno</th>
+                            <th>Numero Carrozza</th>
+                            <th>Prezzo</th>
+                            <th>Tariffa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <th id="passeggero"></th>
+                        <th id="numTreno"></th>
+                        <th id="nCarrozza"></th>
+                        <th id="prezzo"></th>
+                        <th id="tariffa"></th>
+                    </tbody>
+                </table>
+            </div>
+
+            <button id="btnCrea" type="button" name="btnCrea">Calcola</button>
+
+        </div>
+    </div>
+
+<!-- SCRIPT -->
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
