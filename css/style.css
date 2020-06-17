@@ -14,7 +14,18 @@ body {
 
 /* Classi di appoggio */
 .hidden {
-    display: none;
+    position: absolute;
+    max-width: 0;
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+
+.show {
+    position: static;
+    opacity: 1;
+    max-width: 1000px;
+    transition: .8s;
 }
 
 /* Contenuto */
@@ -29,14 +40,13 @@ body {
 
 .jumbo {
     padding: 30px 3%;
-    min-width: 450px;
+    min-width: 500px;
     background-color: #B4D0BA;
     text-align: center;
     border-radius: 15px;
     line-height: 1.5;
+    overflow: hidden;
 }
-
-
 
 #form {
     margin-top: 20px;
@@ -64,6 +74,8 @@ body {
 #biglietto table {
     padding: 10px;
     margin-top: 20px;
+    max-width: 100%;
+    overflow: hidden;
     background-color: #ddd;
     border-radius: 15px;
 }
