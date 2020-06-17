@@ -17,7 +17,7 @@ body {
     position: absolute;
     max-width: 0;
     opacity: 0;
-    transition: .5s;
+    transition: max-width 1s, opacity .5s ease-out .5s;
     z-index: -1;
 }
 
@@ -25,7 +25,7 @@ body {
     position: static;
     opacity: 1;
     max-width: 1000px;
-    transition: .8s;
+    transition: max-width 1s, opacity .5s ease-out .5s;
 }
 
 /* Contenuto */
@@ -72,7 +72,7 @@ body {
 
 /* Tabella */
 #biglietto table {
-    padding: 10px;
+    padding: 20px 10px;
     margin-top: 20px;
     max-width: 100%;
     overflow: hidden;

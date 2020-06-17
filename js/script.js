@@ -47,5 +47,4 @@ btn.addEventListener("click", function() {
     document.getElementById('titolo').innerHTML = "Ecco il tuo biglietto!";
     document.getElementById('form').className = "hidden";
     document.getElementById('biglietto').className = "show";
-
 });
